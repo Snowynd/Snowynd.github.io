@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <div class="top-bar">
+        <span id="dynamic-greeting"></span>
+        <button id="theme-toggle-btn" title="Сменить тему"><span id="theme-icon">🌙</span></button>
+    </div>
+
+    <div class="container">
+        <header class="resume-header">
+            <div class="profile-photo-wrapper">
+                <img id="profile-photo" src="https://i.postimg.cc/HsJHGQLX/6b605c-no-logo-no-text.jpg" alt="Фото профиля">
+            </div>
+            <div class="name-section">
+                <h1 id="first-name">Ярослав</h1>
+                <h1 id="last-name">Жидецкий</h1>
+                <p class="job-title">Студент</p>
+            </div>
+        </header>
+
+        <section class="interaction-section card">
+            <h2>Интерактивные элементы</h2>
+            <div class="input-group">
+                <input type="text" id="new-surname-input" placeholder="Введите новую фамилию">
+                <button type="button" id="clear-surname-btn" title="Очистить">✖</button>
+            </div>
+            <div class="button-group">
+                <button id="change-surname-btn" class="btn-primary">Применить фамилию</button>
+                <button id="random-bg-btn" class="btn-secondary">Случайный фон</button>
+            </div>
+        </section>
+
+        <section class="course-progress card">
+            <h2>Конспект курса (Прогресс)</h2>
+            <div class="progress-item learned-ok">
+                <span class="progress-icon">✓</span>
+                <p>Парные теги.</p>
+            </div>
+            <div class="progress-item learned-ok">
+                <span class="progress-icon">✓</span>
+                <p>Одиночные теги.</p>
+            </div>
+            <div class="progress-item learned-ok">
+                <span class="progress-icon">✓</span>
+                <p>Атрибуты тегов.</p>
+            </div>
+            <div class="progress-item learned-ok">
+                <span class="progress-icon">✓</span>
+                <p>Инлайновые (встроенные) стили.</p>
+            </div>
+            <div class="progress-item learning-in-progress">
+                <span class="progress-icon">⏳</span>
+                <p>Внешние стили.</p>
+            </div>
+            <div class="progress-item not-learned">
+                <span class="progress-icon">✕</span>
+                <p>Стилизация по классам.</p>
+            </div>
+            <div class="progress-item not-learned">
+                <span class="progress-icon">✕</span>
+                <p>JavaScript основы.</p>
+            </div>
+        </section>
+
+        <section class="skills card">
+            <h2>Ключевые навыки</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Работа с DOM</li>
+                <li>Git</li>
+                <li>Адаптивная верстка</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© <span id="current-year"></span> Ярослав. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
